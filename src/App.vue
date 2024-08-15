@@ -223,7 +223,7 @@
                     this.error = 'insecure_location';
                 }
                 const hostname = window.location.hostname;
-                if (hostname && ['localhost', '127.0.0.1', 'vanity-eth.tk'].indexOf(hostname) === -1) {
+                if (hostname && ['localhost', '127.0.0.1', 'vanity.bitheart.org'].indexOf(hostname) === -1) {
                     this.error = 'insecure_location';
                 }
             },
@@ -273,12 +273,12 @@
 </script>
 
 <style lang="sass">
-    // Bootstrap - Required
+        // Bootstrap - Required
     @import "~bootstrap/scss/functions"
     @import "~bootstrap/scss/variables"
     @import "~bootstrap/scss/mixins"
 
-    // Bootstrap - Optional
+        // Bootstrap - Optional
     @import "~bootstrap/scss/reboot"
     @import "~bootstrap/scss/grid"
 
@@ -293,84 +293,84 @@
         background-attachment: fixed
         font-size: 16px
 
-    h1, h2, h3, h4, h5, h6, p, label
-        margin: 0
-        font-weight: normal
+        h1, h2, h3, h4, h5, h6, p, label
+            margin: 0
+            font-weight: normal
 
-    a, a:visited, a:hover
-        color: $text-alt
-        text-decoration: underline
+        a, a:visited, a:hover
+            color: $text-alt
+            text-decoration: underline
 
-    a:hover
-        color: $text
+        a:hover
+            color: $text
 
-    .panel
-        padding: 1.5em 3em
-        background-color: $panel-background
-        margin-top: 2em
-        color: $text
-        font-weight: 400
-        box-shadow: $shadow
-        transition: box-shadow 0.2s ease-in-out
-        &:hover
-            box-shadow: $shadow-big
-
-    #content
-        margin-top: 8em
-        margin-bottom: 6em
-
-    .text-input-large
-        width: 100%
-        color: $text
-        background: $panel-background-alt
-        outline: none
-        font-size: 1.3em
-        padding: 0.5em
-        border: none
-        margin-bottom: 10px
-        -webkit-appearance: none
-        &::placeholder
-            color: $placeholder
-
-    .button-large
-        border: none
-        outline: none
-        color: $text-opposite
-        padding: 8px
-        font-size: 19px
-        font-weight: 500
-        margin: 1.3em 0 0 0
-        cursor: pointer
-        -webkit-appearance: none
-        background: $primary
-        width: 100%
-        &:hover
-            background: $secondary
-        &:disabled
-            background: $disabled
-            cursor: auto
-
-    /*-- Pre-render-specific --
-
-    #app.render .hide-render
-        display: none
-
-    #app.prerender .hide-prerender
-        display: none
-
-    /*-- Responsive design --
-
-    @media screen and (max-width: 1024px)
-        #content
-            margin-top: 7em
-            margin-bottom: 5em
-
-    @media screen and (max-width: 640px)
-        #content
-            margin-top: 5em
-            margin-bottom: 4em
-
-    @media screen and (max-width: 480px)
         .panel
-            padding: 1em
+            padding: 1.5em 3em
+            background-color: $panel-background
+            margin-top: 2em
+            color: $text
+            font-weight: 400
+            box-shadow: $shadow
+            transition: box-shadow 0.2s ease-in-out
+            &:hover
+                box-shadow: $shadow-big
+
+        #content
+            margin-top: 8em
+            margin-bottom: 6em
+
+        .text-input-large
+            width: 100%
+            color: $text
+            background: $panel-background-alt
+            outline: none
+            font-size: 1.3em
+            padding: 0.5em
+            border: none
+            margin-bottom: 10px
+            -webkit-appearance: none
+            &::placeholder
+                color: $placeholder
+
+        .button-large
+            border: none
+            outline: none
+            color: $text-opposite
+            padding: 8px
+            font-size: 19px
+            font-weight: 500
+            margin: 1.3em 0 0 0
+            cursor: pointer
+            -webkit-appearance: none
+            background: $primary
+            width: 100%
+            &:hover
+                background: $secondary
+            &:disabled
+                background: $disabled
+                cursor: auto
+
+        /*-- Pre-render-specific --
+
+        #app.render .hide-render
+            display: none
+
+        #app.prerender .hide-prerender
+            display: none
+
+        /*-- Responsive design --
+
+        @media screen and (max-width: 1024px)
+            #content
+                margin-top: 7em
+                margin-bottom: 5em
+
+        @media screen and (max-width: 640px)
+            #content
+                margin-top: 5em
+                margin-bottom: 4em
+
+        @media screen and (max-width: 480px)
+            .panel
+                padding: 1em
 </style>
